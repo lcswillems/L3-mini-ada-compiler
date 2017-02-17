@@ -4,37 +4,36 @@ BIN=adac
 FLAGS=
 
 all: $(BIN)
-	./$(BIN) ../test.adb
 
 clean:
-	rm -f *.cm[io] *.o *~ $(BIN) $(GENERATED) parser.automaton parser.conflicts .depend tests-eleves/exec/*.s tests-eleves/exec/*.bin tests-eleves/exec/*.out-mien
+	rm -f *.cm[io] *.o *~ $(BIN) $(GENERATED) parser.automaton parser.conflicts .depend ../tests/exec/*.s ../tests/exec/*.bin ../tests/exec/*.out-mien
 
 tests: $(BIN)
-	# for f in tests-eleves/exec/*.adb; do \
-	# 	./$(BIN) $$f --type-only; \
-	# done
-	# for f in tests-eleves/exec-fail/*.adb; do \
-	# 	./$(BIN) $$f --type-only; \
-	# done
-	# for f in tests-eleves/typing/good/*.adb; do \
-	# 	./$(BIN) $$f --type-only; \
-	# done
-	# for f in tests-eleves/typing/bad/*.adb; do \
-	# 	./$(BIN) $$f --type-only; \
-	# done
-	# for f in tests-eleves/syntax/good/*.adb; do \
-	# 	./$(BIN) $$f --type-only; \
-	# done
-	# for f in tests-eleves/syntax/bad/*.adb; do \
-	# 	./$(BIN) $$f --type-only; \
-	# done
-	for f in tests-eleves/exec/*.adb; do \
+	for f in ../tests/exec/*.adb; do \
+		./$(BIN) $$f --type-only; \
+	done
+	for f in ../tests/exec-fail/*.adb; do \
+		./$(BIN) $$f --type-only; \
+	done
+	for f in ../tests/typing/good/*.adb; do \
+		./$(BIN) $$f --type-only; \
+	done
+	for f in ../tests/typing/bad/*.adb; do \
+		./$(BIN) $$f --type-only; \
+	done
+	for f in ../tests/syntax/good/*.adb; do \
+		./$(BIN) $$f --type-only; \
+	done
+	for f in ../tests/syntax/bad/*.adb; do \
+		./$(BIN) $$f --type-only; \
+	done
+	for f in ../tests/exec/*.adb; do \
 		./$(BIN) $${f%.adb}.adb; \
 		gcc $${f%.adb}.s -o $${f%.adb}.bin; \
 		./$${f%.adb}.bin > $${f%.adb}.out-mien; \
 		diff $${f%.adb}.out $${f%.adb}.out-mien; \
 	done
-	for f in tests-eleves/exec-fail/*.adb; do \
+	for f in ../tests/exec-fail/*.adb; do \
 		./$(BIN) $${f%.adb}.adb; \
 		gcc $${f%.adb}.s -o $${f%.adb}.bin; \
 		./$${f%.adb}.bin > $${f%.adb}.out-mien; \
