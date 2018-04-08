@@ -1,6 +1,8 @@
+# Compilateur Mini-ADA
+
 Ce projet consiste en la réalisation d'un compilateur (lexeur, parseur, typeur et compilateur) pour le langage Mini-ADA, écrit en OCaml. Ce projet a été réalisé par [Lucas Willems](http://www.lucaswillems.com) pour le cours de [Langages de programmation et compilation](https://www.lri.fr/~filliatr/ens/compil/) donné par Jean-Christophe Filliâtre pour la L3 d'informatique de l'ENS Ulm.
 
-# Structure du projet
+## Structure du projet
 
 Le projet (dans le dossier `src`) contient un `Makefile` permettant d'exécuter les 3 commandes :
 - `make` : pour compiler le compilateur
@@ -17,7 +19,7 @@ Et 6 fichiers :
 
 La bibliothèque tierce "x86-64", créée par Jean-Christophe Filliâtre (CNRS) et Kim Nguyen (Université Paris Sud), est utilisée pour la génération du code assembleur.
 
-# Utilisation du compilateur
+## Utilisation du compilateur
 
 Pour utiliser le compilateur, il faut d'abord compiler son code source avec la commande `make`. Le compilateur est alors créé sous le nom `adac` (pour ADA Compiler). Celui prend différents paramètres :
 - `(filename)` : définit le nom du fichier à compiler. Celui-ci doit avoir l'extension `ada`.
