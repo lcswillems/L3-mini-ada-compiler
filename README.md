@@ -28,6 +28,6 @@ Pour utiliser le compilateur, il faut d'abord compiler son code source avec la c
 
 Voici un exemple d'utilisation :
 
-```bash
-> ./adac ../tests/exec/bst.adb --type-only
+```
+./adac ../tests/exec/bst.adb --type-only
 ```
