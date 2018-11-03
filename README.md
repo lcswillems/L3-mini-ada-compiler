@@ -4,9 +4,7 @@ Ce dépôt contient un compilateur (lexeur, parseur, typeur et compilateur) pour
 
 Ce compilateur a été réalisé par [Lucas Willems](http://www.lucaswillems.com) pour le cours "[Langages de programmation et compilation](https://www.lri.fr/~filliatr/ens/compil/)" donné par Jean-Christophe Filliâtre pour la L3 d'informatique de l'ENS Ulm.
 
-En plus du compilateur (dans le dossier `Code`), ce dépôt contient :
-- un rapport sur le compilateur
-- le diaporama de la soutenance
+En plus du compilateur (dans le dossier `Code`), ce dépôt contient aussi un rapport sur le compilateur.
 
 ## Structure du code
 
