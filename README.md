@@ -1,10 +1,16 @@
 # Compilateur Mini-ADA
 
-Ce projet consiste en la réalisation d'un compilateur (lexeur, parseur, typeur et compilateur) pour le langage Mini-ADA, écrit en OCaml. Ce projet a été réalisé par [Lucas Willems](http://www.lucaswillems.com) pour le cours "[Langages de programmation et compilation](https://www.lri.fr/~filliatr/ens/compil/)" donné par Jean-Christophe Filliâtre pour la L3 d'informatique de l'ENS Ulm.
+Ce dépôt contient un compilateur (lexeur, parseur, typeur et compilateur) pour le langage Mini-ADA, écrit en OCaml.
 
-## Structure du projet
+Ce compilateur a été réalisé par [Lucas Willems](http://www.lucaswillems.com) pour le cours "[Langages de programmation et compilation](https://www.lri.fr/~filliatr/ens/compil/)" donné par Jean-Christophe Filliâtre pour la L3 d'informatique de l'ENS Ulm.
 
-Le projet (dans le dossier `src`) contient un `Makefile` permettant d'exécuter les 3 commandes :
+En plus du compilateur (dans le dossier `Code`), ce dépôt contient :
+- un rapport sur le compilateur
+- le diaporama de la soutenance
+
+## Structure du code
+
+Le code contient un `Makefile` permettant d'exécuter les 3 commandes :
 - `make` : pour compiler le compilateur
 - `make clean` : pour nettoyer les fichiers produits lors de la compilation
 - `make tests` : pour tester le compilateur sur la série de programmes contenue dans le dossier `tests`
